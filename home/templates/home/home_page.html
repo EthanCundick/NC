@@ -5,5 +5,18 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-{{ page.body|richtext }}
+
+<div class="jumbotron">
+    <h1 class="display-3">{{page.header}}</h1>
+</div>
+
+<div class="contaier-fluid">
+    <div class="row">
+        <div class="col text-center">
+            {{ page.body|richtext }}
+        </div>
+    </div>
+
+</div>
+
 {% endblock %}
