@@ -2,21 +2,43 @@
 
 {% load wagtailcore_tags %}
 
-{% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
 
-<div class="jumbotron">
-    <h1 class="display-3">{{page.header}}</h1>
-</div>
-
-<div class="contaier-fluid">
+<div class="container pt-5 pb-5">
     <div class="row">
+        <!-- <div class="col-md-4 pr-4 pt-5">
+            <img src="https://nutrichansa.blob.core.windows.net/nutrichan/k8-MQ82YY6iuPc-unsplash.jpg"
+                class="img-fluid rounded shadow " alt="">
+        </div> -->
         <div class="col text-center">
-            {{ page.body|richtext }}
+            <h1 class="p-5">{{page.header}}</h1>
+            <p class="">{{page.body}}</p>
         </div>
     </div>
 
 </div>
+
+
+<div class="container-fluid about pt-5">
+
+    <div class=" row">
+
+        <div class="col">
+            <h2 class="text-center pb-3">About</h2>
+
+            <p>{{page.about_text_one}}</p>
+
+            <p>{{page.about_text_two}}</p>
+
+        </div>
+        <div class="col-md-2 pr-4 pt-5">
+            <img src="https://nutrichansa.blob.core.windows.net/nutrichan/k8-MQ82YY6iuPc-unsplash.jpg"
+                class="img-fluid rounded shadow " alt="">
+        </div>
+    </div>
+
+</div>
+
 
 {% endblock %}

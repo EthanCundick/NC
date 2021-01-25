@@ -1,10 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/* Paragraph */
+
+p{
+    font-size: 1.25rem;
+}
+
+
 /* Body */
 
 body{
-    background-color: #F7F9FA;
+    background-color: #FAF6F0;
 }
 
+
 /* Navbar */
+
+nav {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
 
 #navbarNav > ul > li.nav-item {
     font-size: 1.3rem;
@@ -15,4 +34,23 @@ body{
 a.navbar-brand {
     font-size: 1.5rem;
     padding-left: 5%;
+}
+
+
+/* About */
+
+.about{
+    background-color: white;
+    padding: 5%;
+}
+
+
+/* Footer */
+
+.foot{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* padding-left: 15%;
+    padding-right: 15%; */
+
 }

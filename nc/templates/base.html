@@ -22,30 +22,27 @@
     <header>
         <!-- NavBar -->
 
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-                <a class="navbar-brand" href="#">Nutrichan</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav pl-5">
-                        <li class="nav-item pr-2">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item pr-2">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item pr-2">
-                            <a class="nav-link" href="#">Tools</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+            <a class="navbar-brand" href="#">Nutrichan</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav pl-5">
+                    <li class="nav-item pr-2">
+                        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link active" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link active" href="#">Tools</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-
-        </div>
 
         <!-- End Navbar -->
 
@@ -56,6 +53,29 @@
     {% block content %}
 
     {% endblock %}
+
+    <footer>
+        <div class="container-fluid foot text-center">
+            <div class="row">
+                <div class="col-md-4 pt-1">
+                    <h2>Nutrichan</h2>
+                </div>
+                <div class="col-md-4">
+                    <h4>About</h4>
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Social</h4>
+                    <ul>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
